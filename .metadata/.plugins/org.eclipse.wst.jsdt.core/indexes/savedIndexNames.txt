@@ -1,0 +1,1 @@
+INDEX VERSION 1.4+G:\Documentos\SENAC ADS\Modulo 3\programaçao 2\Livro OO na prática\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes

@@ -1,0 +1,68 @@
+package calculando;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+
+//Parte interna da Classe
+public class Calculadora {
+	
+	//Metodo Main
+	public static void main(String[] args) throws IOException {
+		countln("Calculadora sem OO");
+		char ch = ``; //Criação da variavel ch em espaço em branco
+		
+		/*While para verificar se o usuario deseja sair
+		 * True é looping infinito, dentro do loop é passado a mensagem de sair
+		 * se for dado S ou s o loop é quebrado com break */
+		while(true) {
+			cout("Para sair digite Sou s: ");
+			
+			ch = cinch();
+			if(ch == 'S' || ch =='s')break;
+		}
+		
+	}
+	//Permite ler a String do teclado e retorna
+	static String cin() throws IOException {
+		InputStreamReader in = new InputStreamReader(System.in);
+		BufferedReader br = new BufferedReader(in);
+		
+		String str = br.readLine();
+		return str;
+	}
+	//Metodo teste para certificar que os caracteres são todos validos para numero
+	static double cind() throws IOException {
+		String str = cin();
+		double d = 0;
+		int i=0;
+		while (i<str.length()) {
+			if((str.charAt(i)>= '0' && str.charAt(i) <= '9' ) || str.charAt(i) == '.'||
+					str.charAt(i) == '-') {i++;continue;}
+			else return d;
+		}
+		d = Double.parseDouble(str);
+		return d;
+	}
+	//Metodo para ler um caractere do teclado
+	static char cinch() throws IOException {
+		String str = cin();
+		char ch = 'e';
+		if(str.length() >= 1)
+			ch = str.charAt(0);
+		return ch;
+	}
+	/*Metodo cinch utiliza método cin para ler String e seleciona primeiro caractere da String
+	 *Metodo cout escreve e mantem cursor na mesma linha
+	 *Metodo countl escreve e passa o cursor para a linha seguinte*/
+	static void cout(String str) {
+		System.out.println(str);
+	}
+	
+	static void countln(String str) {
+		System.out.println(str);
+	}
+
+}
+

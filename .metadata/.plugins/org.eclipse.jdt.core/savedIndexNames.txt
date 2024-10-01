@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+G:\Documentos\SENAC ADS\Modulo 3\programaçao 2\Livro OO na prática\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+1667979637.index
+1650449417.index
